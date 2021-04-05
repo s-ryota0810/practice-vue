@@ -6,5 +6,6 @@ let app = new Vue({
       value: 'Vue js!' 
     },
     list: ['りんご', 'ばなな', 'いちご'],
+    num: 1
   }
 })
