@@ -4,6 +4,7 @@ let app = new Vue({
   data: { 
     message:　{
       value: 'Vue js!' 
-    }
+    },
+    list: ['りんご', 'ばなな', 'いちご'],
   }
 })
