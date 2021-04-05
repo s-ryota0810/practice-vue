@@ -13,6 +13,10 @@ let app = new Vue({
   methods: {
     increment: function() {
       this.count += 1
+    },
+    
+    decrement: function() {
+      this.count -= 1
     }
   }
 })
