@@ -22,6 +22,12 @@
     <div v-else>
       全ての条件を満たさなかった
     </div>
+    <div v-if="loaded" key="content-visible">
+      content
+    </div>
+    <div v-else key="content-loading">
+      loading now...
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="./main.js"></script>

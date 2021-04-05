@@ -2,6 +2,7 @@ let app = new Vue({
   el: '#app',
   data: {
     ok: true,
-    type: 'B'
+    type: 'B',
+    loaded: false
   }
 })
