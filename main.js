@@ -19,10 +19,12 @@ let app = new Vue({
     increment: function() {
       let vm = this
       setTimeout(function(){ vm.count++ }, 100)
+      vm.textColor = 'blue'
     },
     
     decrement: function() {
       setTimeout(function() { this.count--}.bind(this), 1000)
+      this.bgColor = 'red'
     }
     
   }
