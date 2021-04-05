@@ -26,7 +26,9 @@ let app = new Vue({
       alt: '犬の画像',
       width: 400,
       height: 200
-    }
+    },
+    
+    radius: 50
   
   },
   mounted: function() {
