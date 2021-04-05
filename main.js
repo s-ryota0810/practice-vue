@@ -12,11 +12,13 @@ let app = new Vue({
   
   methods: {
     increment: function() {
-      this.count += 1
+      let vm = this
+      setTimeout(function(){ vm.count++ }, 100)
     },
     
     decrement: function() {
-      this.count -= 1
+      setTimeout(function() { this.count--}.bind(this), 1000)
     }
+    
   }
 })
