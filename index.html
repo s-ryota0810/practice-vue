@@ -19,6 +19,7 @@
         <p v-bind:class="classObject">Text</p>
         <p v-bind:style="styleObject">Text</p>
         <img v-bind="item">
+        <img v-bind="item" v-bind:id="'thumb-' + item.id">
       </div>      
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
