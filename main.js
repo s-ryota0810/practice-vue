@@ -9,7 +9,16 @@ let app = new Vue({
     isChild: false,
     isActive: true,
     textColor: 'red',
-    bgColor:'lightgray'
+    bgColor:'lightgray',
+    classObject: {
+      child: true,
+      'is-active': false
+    },
+    
+    styleObject: {
+      color: 'yellow',
+      backgroundColor: 'lightgray'
+    }
   },
   mounted: function() {
     this.scroll = 100
