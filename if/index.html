@@ -8,7 +8,8 @@
 </head>
 <body>
   <div id="app">
-    <p>{{ message }}</p>
+    <div v-if="ok">v-if条件による描画</div>
+    <div v-show="ok">v-show条件による描画</div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="main.js"></script>
