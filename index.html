@@ -8,53 +8,11 @@
   </head>
   <body>
     <div id="app">
-      <pre>{{$data}}</pre>
+      <p>Hello {{message}}</p>
+      <div v-bind:text-content.prop="message"></div>
       <div v-bind:scroll-top.prop="scroll">
-        <p>Hello {{message}}</p>
-        <div v-bind:text-content.prop="message"></div>
-          こんにちは。
-        この文章を<br>
-        最後まで読むには<br>
-        縦スクロールする<br>
-        必要があります。<br>
-        あああ<br>
-        いいい<br>
-        ううう<br>
-        えええ<br>
-        おおお<br>
-        あああ<br>
-        いいい<br>
-        ううう<br>
-        えええ<br>
-        おおお<br>
-        あああ<br>
-        いいい<br>
-        ううう<br>
-        あああ<br>
-        いいい<br>
-        ううう<br>
-        えええ<br>
-        おおお<br>
-        あああ<br>
-        いいい<br>
-        ううう<br>
-        えええ<br>
-        おおお<br>
-        あああ<br>
-        いいい<br>
-        ううう<br>
-        えええ<br>
-        おおお<br>
-        あああ<br>
-        いいい<br>
-        ううう<br>
-        えええ<br>
-        おおお<br>
-        あああ<br>
-        いいい<br>
-        ううう<br>
-        えええ<br>
-        おおお<br>
+        <p>{{ count }}回クリックしたよ！</p>
+        <button v-on:click="increment">カウントを増やす</button>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
