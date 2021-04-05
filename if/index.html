@@ -13,7 +13,15 @@
       <div>コンテンツ</div>
     </template>
     <div v-show="ok">v-show条件による描画</div>
-    
+    <div v-if="type === 'A'">
+      typeは A
+    </div>
+    <div v-else-if="type === 'B'">
+      typeは B
+    </div>
+    <div v-else>
+      全ての条件を満たさなかった
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="./main.js"></script>
