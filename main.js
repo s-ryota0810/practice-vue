@@ -1,4 +1,9 @@
+let state = { count: 0 }
 let app = new Vue({
   el: "#app",
-  data: { show: true }
+  data: { 
+    state: state 
+  }
 })
+
+state.count++
