@@ -18,7 +18,16 @@ let app = new Vue({
     styleObject: {
       color: 'yellow',
       backgroundColor: 'lightgray'
+    },
+    
+    item: {
+      id: 1,
+      src: 'dog.jpeg',
+      alt: '犬の画像',
+      width: 400,
+      height: 200
     }
+  
   },
   mounted: function() {
     this.scroll = 100
