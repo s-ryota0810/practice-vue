@@ -4,7 +4,12 @@ let app = new Vue({
   data: { 
     message: 'Vue js!',
     scroll: 0,
-    count: 0
+    count: 0,
+    
+    isChild: false,
+    isActive: true,
+    textColor: 'red',
+    bgColor:'lightgray'
   },
   mounted: function() {
     this.scroll = 100
