@@ -8,13 +8,53 @@
   </head>
   <body>
     <div id="app">
-      <p>Hello {{message.value}}</p>
-      <p>{{list[num]}}</p>
-      <p>{{1+1}}</p>
-      <p>{{ message.length >= 10 ? '10文字以上': '10文字未満'}}</p>
-      <p>{{ Math.round(3.14) }}</p>
-      <input type="text" :value="message.value">
-      <div v-bind:text-content.prop="message.value"></div>
+      <div v-bind:scroll-top.prop="scroll">
+        <p>Hello {{message}}</p>
+        <div v-bind:text-content.prop="message"></div>
+          こんにちは。
+        この文章を<br>
+        最後まで読むには<br>
+        縦スクロールする<br>
+        必要があります。<br>
+        あああ<br>
+        いいい<br>
+        ううう<br>
+        えええ<br>
+        おおお<br>
+        あああ<br>
+        いいい<br>
+        ううう<br>
+        えええ<br>
+        おおお<br>
+        あああ<br>
+        いいい<br>
+        ううう<br>
+        あああ<br>
+        いいい<br>
+        ううう<br>
+        えええ<br>
+        おおお<br>
+        あああ<br>
+        いいい<br>
+        ううう<br>
+        えええ<br>
+        おおお<br>
+        あああ<br>
+        いいい<br>
+        ううう<br>
+        えええ<br>
+        おおお<br>
+        あああ<br>
+        いいい<br>
+        ううう<br>
+        えええ<br>
+        おおお<br>
+        あああ<br>
+        いいい<br>
+        ううう<br>
+        えええ<br>
+        おおお<br>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
     <script src="main.js"></script>
