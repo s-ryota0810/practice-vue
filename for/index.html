@@ -18,6 +18,9 @@
         <button v-on:click="doRemove(index)">モンスターを削除</button>
       </li>
     </ul>
+    <ul>
+      <li v-for="item in list">{{item}}</li>
+    </ul>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="./main.js"></script>
