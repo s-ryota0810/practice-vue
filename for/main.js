@@ -20,6 +20,11 @@ let app = new Vue({
         name: this.name,
         hp: 500
       })
+    },
+    
+    doRemove: function(index) {
+      this.list.splice(index,1)
     }
+    
   }
 })
