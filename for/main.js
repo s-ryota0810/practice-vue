@@ -9,6 +9,12 @@ let app = new Vue({
     ]
   },
   
+  created: function() {
+    this.list.forEach(function(item) {
+      this.$set(item, 'active', false)
+    }, this)
+  },
+  
   methods: {
     doAdd: function() {
       let max = this.list.reduce(function(a,b) {
