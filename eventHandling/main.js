@@ -13,6 +13,10 @@ new Vue({
     handleInput: function(event) {
       alert(this.message)
       this.message = event.target.value
+    },
+    
+    handler: function(comment) {
+      alert(comment)
     }
   }
   
