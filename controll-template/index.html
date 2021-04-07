@@ -7,8 +7,9 @@
 </head>
 <body>
   <div id="app">
-    <a v-bind:href="url" v-pre>Hello {{ message }}</a>  
-    <a v-bind:href="url" v-once>Hello {{ message }}</a>
+    <a v-bind:href="url" v-pre>Hello {{ message }}</a><br>
+    <a v-bind:href="url" v-once>Hello {{ message }}</a><br>
+    <a v-bind:href="url" v-text="message"></a>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="./main.js"></script>
