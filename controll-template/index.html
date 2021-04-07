@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>directiveControllTemplate</title>
+</head>
+<body>
+  <div id="app" v-cloak>
+    <a v-bind:href="url" v-pre>Hello {{ message }}</a><br>
+    <a v-bind:href="url" v-once>Hello {{ message }}</a><br>
+    <a v-bind:href="url" v-text="message"></a><br>
+    <a v-bind:href="url" v-html="msg"></a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
