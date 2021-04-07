@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
   <title>directiveControllTemplate</title>
 </head>
 <body>
-  <div id="app">
+  <div id="app" v-cloak>
     <a v-bind:href="url" v-pre>Hello {{ message }}</a><br>
     <a v-bind:href="url" v-once>Hello {{ message }}</a><br>
     <a v-bind:href="url" v-text="message"></a><br>
