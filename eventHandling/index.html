@@ -9,6 +9,8 @@
 <body>
   <div id="app">
     <button v-on:click="handleClick">クリック</button>    
+    <button v-on:click="count++">カウントアップ</button><br>
+    <span v-text="count"></span>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="./main.js"></script>
