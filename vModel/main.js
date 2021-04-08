@@ -8,7 +8,9 @@ new Vue({
     valr: "",
     vall: "",
     valls: [],
-    preview: ""
+    preview: "",
+    range: 80,
+    price: 100
   },
   
   methods: {
