@@ -13,7 +13,8 @@
     <textarea v-model="text"></textarea>
     <pre>{{ text }}</pre>
     <label>
-      <input type="checkbox" v-model="val"> {{ val }}      
+      <input type="checkbox" v-model="val" true-value="yes" false-value="no">
+      {{ val }}
     </label>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
