@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./main.css">
+  <title>vModel</title>
+</head>
+<body>
+  <div id="app">
+    <input v-model="message">
+    <input v-bind:value="message">
+    <textarea v-model="text"></textarea>
+    <pre>{{ text }}</pre>
+    <label>
+      <input type="checkbox" v-model="val" true-value="yes" false-value="no">
+      {{ val }}
+      <label><input type="checkbox" v-model="vals" value="S">A</label>
+      <label><input type="checkbox" v-model="vals" value="B">B</label>
+      <label><input type="checkbox" v-model="vals" value="C">C</label>
+      {{ vals }}
+    </label>
+    <div>
+      <label><input type="radio" value="a" v-model="valr">A</label>
+      <label><input type="radio" value="b" v-model="valr">B</label>
+      <label><input type="radio" value="c" v-model="valr">C</label>
+      {{ valr }}
+    </div>
+    <div>
+      <select v-model="vall">
+        <option disabled="disabled">選択してください</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+      </select>
+    </div>
+    <div>
+      <select v-model="valls" multiple>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+      </select>
+      <p>{{ valls }}</p>
+    </div>
+    <div>
+      <input type="file" v-on:change="handleChange">
+      <div v-if="preview"><img v-bind:src="preview"></div>
+    </div>
+    <div>
+      <input type="range" v-model.number="range"> {{ range }}
+    </div>
+    <div>
+      <input type="text" v-model.number="price"> {{ price }}
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
