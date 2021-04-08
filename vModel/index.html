@@ -42,6 +42,10 @@
       </select>
       <p>{{ valls }}</p>
     </div>
+    <div>
+      <input type="file" v-on:change="handleChange">
+      <div v-if="preview"><img v-bind:src="preview"></div>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="./main.js"></script>
