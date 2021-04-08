@@ -26,6 +26,14 @@
       <label><input type="radio" value="c" v-model="valr">C</label>
       {{ valr }}
     </div>
+    <div>
+      <select v-model="vall">
+        <option disabled="disabled">選択してください</option>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+      </select>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="./main.js"></script>

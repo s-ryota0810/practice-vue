@@ -5,6 +5,7 @@ new Vue({
     text: 'react',
     val: true,
     vals: [],
-    valr: ""
+    valr: "",
+    vall: ""
   }
 })
