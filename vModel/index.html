@@ -15,6 +15,10 @@
     <label>
       <input type="checkbox" v-model="val" true-value="yes" false-value="no">
       {{ val }}
+      <label><input type="checkbox" v-model="vals" value="S">A</label>
+      <label><input type="checkbox" v-model="vals" value="B">B</label>
+      <label><input type="checkbox" v-model="vals" value="C">C</label>
+      {{ vals }}
     </label>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>

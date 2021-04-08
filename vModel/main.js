@@ -3,6 +3,7 @@ new Vue({
   data: {
     message : 'Vue',
     text: 'react',
-    val: true
+    val: true,
+    vals: []
   }
 })
