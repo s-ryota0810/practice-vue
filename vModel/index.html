@@ -9,7 +9,9 @@
 <body>
   <div id="app">
     <input v-model="message">
-    <p>{{ message }}</p>
+    <input v-bind:value="message">
+    <textarea v-model="text"></textarea>
+    <pre>{{ text }}</pre>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="./main.js"></script>

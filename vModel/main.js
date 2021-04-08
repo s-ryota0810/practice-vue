@@ -1,6 +1,7 @@
 new Vue({
   el: '#app',
   data: {
-    message : 'Vue'
+    message : 'Vue',
+    text: 'react'
   }
 })
