@@ -4,6 +4,7 @@ new Vue({
     message : 'Vue',
     text: 'react',
     val: true,
-    vals: []
+    vals: [],
+    valr: ""
   }
 })
