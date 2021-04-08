@@ -6,6 +6,7 @@ new Vue({
     val: true,
     vals: [],
     valr: "",
-    vall: ""
+    vall: "",
+    valls: []
   }
 })

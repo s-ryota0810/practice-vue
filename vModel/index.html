@@ -34,6 +34,14 @@
         <option value="c">C</option>
       </select>
     </div>
+    <div>
+      <select v-model="valls" multiple>
+        <option value="a">A</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+      </select>
+      <p>{{ valls }}</p>
+    </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
   <script src="./main.js"></script>
