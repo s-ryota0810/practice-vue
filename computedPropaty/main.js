@@ -6,6 +6,10 @@ let app = new Vue({
   },
   
   computed: {
+    halfWidth: {
+      get: function(){ return this.width / 2 },
+      set: function(val) { this.width = val * 2 },
+    },
     halfWidth: function(){
       return this.width / 2
     },
