@@ -15,7 +15,7 @@ new Vue({
       
       axios.get('https://api.github.com/search/repositories', {
         params: { q: 'topic:' + val }
-      }).then(function(responce) {
+      }).then(function(response) {
         this.list = response.data.items
       }.bind(this))
     }
