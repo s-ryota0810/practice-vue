@@ -10,7 +10,10 @@
         {{ price | localeNum }}円    
       </div>
       <div>
-        {{ message | filter(foo, 100) }}    
+        {{ message | filter(foo, 100) }}
+      </div>
+      <div>
+        180度は {{ 180 | radian | round }}ラジアンだよ
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>

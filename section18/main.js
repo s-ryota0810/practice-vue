@@ -13,6 +13,14 @@ let vue = new Vue({
     
     filter: function(message, foo, num) {
       console.log(message, foo, num)
+    },
+    
+    round: function(val){
+      return Math.round(val * 100) / 100
+    },
+    
+    radian: function(val) {
+      return val * Math.PI / 180
     }
   }
 });
