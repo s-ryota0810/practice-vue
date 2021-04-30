@@ -1,14 +1,12 @@
 new Vue({
-  
   el: '#app',
   data: {
     price: 19800
   },
   
-  filter: {
+  filters: {
     localeNum: function(val) {
       return val.toLocaleString()
     }
   }
-  
-})
+});
