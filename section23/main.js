@@ -1,18 +1,14 @@
-Vue.component('my-component', {
-  template: '<p><comp-child></comp-child></p>',
-  
-});
-
 Vue.component('comp-child', {
-  template: '<list>{{ name }} HP.{{ hp }}</list>',
-  props: ['name', 'hp']
+  template: '<li>{{ name }} HP.{{ hp }}\
+            <button v-on:click="doAttack">攻撃する</button></li>',
+  props: ['name', 'hp'],
+  methods: {
+    doAttack: function(){
+      this.hp -= 10
+    }
+  }
   
 });
-
-
-let MyComponent = {
-  template: '<p>Example</p>'
-};
 
 new Vue ({
   el: "#app",
@@ -23,8 +19,5 @@ new Vue ({
       { id: 3, name: 'ドラゴン', hp:500 }
     ]
   },
-  components: {
-    'my-component': MyComponent
-  }
   
 })
