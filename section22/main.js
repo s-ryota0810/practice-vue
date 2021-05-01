@@ -1,7 +1,15 @@
-Vue.component('my-component', {
-  template: '<p>MyComponent</p>'
-}),
+//Vue.component('my-component', {
+//  template: '<p>MyComponent</p>'
+//}),
+
+let MyComponent = {
+  template: '<p>Example</p>'
+};
 
 new Vue ({
-  el: "#app"
+  el: "#app",
+  components: {
+    'my-component': MyComponent
+  }
+  
 })
