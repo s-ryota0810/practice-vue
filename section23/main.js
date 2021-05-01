@@ -1,10 +1,11 @@
 Vue.component('my-component', {
-  template: '<p><comp-child></comp-child></p>'
+  template: '<p><comp-child></comp-child></p>',
+  
 });
 
 Vue.component('comp-child', {
-  template: '<p>{{ val }}</p>',
-  props: ['val']
+  template: '<list>{{ name }} HP.{{ hp }}</list>',
+  props: ['name', 'hp']
   
 });
 
@@ -15,6 +16,13 @@ let MyComponent = {
 
 new Vue ({
   el: "#app",
+  data: {
+    list: [
+      { id: 1, name: 'スライム', hp:100 },
+      { id: 2, name: 'ゴブリン', hp:200 },
+      { id: 3, name: 'ドラゴン', hp:500 }
+    ]
+  },
   components: {
     'my-component': MyComponent
   }
