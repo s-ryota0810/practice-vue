@@ -5,10 +5,13 @@
       <title>Vueの練習</title>
   </head>
   <body>
-    <input type="text">
     <div id="app">
       <div v-directive="value">example</div>
-      <input v-focus>
+      <input v-focus><br>
+      <button v-on:click="video1=true">再生</button><br>
+      <button v-on:click="video1=false">停止</button><br>
+      <video src="test.MP4" v-video="video1"></video>
+      
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
