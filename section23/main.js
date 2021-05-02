@@ -1,10 +1,8 @@
 Vue.component('comp-child', {
-  template: '<li>{{ name }} HP.{{ hp }}\
-            <button v-on:click="doAttack">攻撃する</button></li>',
-  props: ['name', 'hp'],
+  template: '<button v-on:click="handleClick">イベント発火</button>',
   methods: {
-    doAttack: function(){
-      this.hp -= 10
+    handleClick: function(){
+      this.$emit('childs-event')
     }
   }
   
@@ -19,5 +17,10 @@ new Vue ({
       { id: 3, name: 'ドラゴン', hp:500 }
     ]
   },
+  methods: {
+    parentsMethod: function(){
+      alert('イベントをキャッチ！')
+    }
+  }
   
 })
