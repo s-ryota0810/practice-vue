@@ -10,6 +10,16 @@ let mixin = {
   }
 }
 
+Vue.component('comp-board', {
+  template: '<div>Message Board</div>',
+})
+
+Vue.component('comp-form', {
+  template: '<div>Form<textarea v-model="message"></textarea></div>',
+  data: function(){
+    return { message: ''}
+  }
+})
 
 Vue.component('my-component-a', {
   mixins: [mixin],
@@ -27,7 +37,8 @@ new Vue ({
   el: "#app",
   data: {
     componentTypes: ['my-component-a', 'my-component-b'],
-    current: 0
+    current: 0,
+    now: 'comp-board'
   },
   computed: {
     component: function(){
