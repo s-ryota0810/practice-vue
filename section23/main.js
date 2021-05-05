@@ -1,26 +1,31 @@
-Vue.component('comp-child', {
-  template: '<button v-on:click="handleClick">イベント発火</button>',
-  methods: {
-    handleClick: function(){
-      this.$emit('childs-event')
+Vue.component('my-component', {
+  template: '<div class="my-component">\
+    <p>名前.{{ name }} HP.{{ hp }}</p>\
+    <p>名前 <input v-model="localName"></p>\
+    <p>HP <input size="5" v-model.number="localHp"></p>\
+    </div>',
+    props: {
+      name: String,
+      hp: Number
+    },
+    computed: {
+      localName: {
+        get: function(){ return this.name },
+        set: function(val){ this.$emit('update:name', val) }
+      },
+      localHp: {
+        get: function(){ return this.hp },
+        set: function(val){ this.$emit('update:hp', val)}
+      }
     }
-  }
-  
-});
+})
 
 new Vue ({
   el: "#app",
   data: {
-    list: [
-      { id: 1, name: 'スライム', hp:100 },
-      { id: 2, name: 'ゴブリン', hp:200 },
-      { id: 3, name: 'ドラゴン', hp:500 }
-    ]
-  },
-  methods: {
-    parentsMethod: function(){
-      alert('イベントをキャッチ！')
-    }
+    name: 'スライム',
+    hp: 100
   }
   
-})
+});
+
