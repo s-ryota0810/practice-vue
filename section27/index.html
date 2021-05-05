@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+  <meta http-equiv="content-type" charset="utf-8">
+      <title>Vueの練習</title>
+  </head>
+  <body>
+    <div id="app">
+      <button v-on:click="current^=1">toggle</button>
+      <div v-bind:is="component"></div><br>
+      <button v-on:click="now='comp-board'">メッセージ一覧</button>
+      <button v-on:click="now='comp-form'">投稿フォーム</button>
+      <keep-alive>
+        <div v-bind:is="now"></div>        
+      </keep-alive>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>
