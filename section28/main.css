@@ -1,13 +1,14 @@
-.demo-enter-active, .demo-leave-active {
+.v-enter-active, .v-leave-active {
   transition: opacity 1s, transform 1s;
+  position: absolute;
 }
 
-.demo-enter {
+.v-enter {
   opacity: 0;
   transform: translateX(-100px);
 }
 
-.demo-leave-to {
+.v-leave-to {
   opacity: 0;
   transform: translateX(100px);
 }
