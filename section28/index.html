@@ -8,7 +8,7 @@
   <body>
     <div id="app">
       <button v-on:click="show=!show">切り替え</button>
-      <transition>
+      <transition name="demo">
         <div v-show="show">トランジションさせたい要素</div>        
       </transition>
     </div>
