@@ -12,6 +12,10 @@
         <div v-if="show" key="a">TRUE</div>
         <div v-else key="b">FALSE</div>
       </transition>
+      <button v-on:click="count++">カウント</button>
+      <transition mode="out-in">
+        <div v-bind:key="count">{{ count }}</div>
+      </transition>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
