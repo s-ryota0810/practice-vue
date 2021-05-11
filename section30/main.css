@@ -1,15 +1,7 @@
 .v-enter-active, .v-leave-active {
-  transition: opacity 1s
+  transition: opacity 1s, transform 1s;
 }
 
-.v-enter {
-  position: absolute;
-}
-
-.v-leave-to {
-  opacity: 0;
-}
-
-.v-move {
+.v-move:not(.v-leave-active) {
   transition: transform 1s;
 }
