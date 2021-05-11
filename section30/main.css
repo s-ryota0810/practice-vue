@@ -9,3 +9,7 @@
 .v-leave-to {
   opacity: 0;
 }
+
+.v-move {
+  transition: transform 1s;
+}
